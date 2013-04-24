@@ -1,0 +1,70 @@
+#include <iostream.h>
+#include <conio.h>
+
+Class employee
+private:
+char *name;
+int age;
+int stage;
+
+public:
+employee();
+employee(char, int, int);
+employeer (const employee &other);
+
+char* GetName();
+int GetAge() const;
+int GetStage() const;
+
+void SetName(char *);
+void SetAge(int);
+void SetStage(int);
+
+void Set(char *, int int);
+void Show();
+
+void SetArray(char *,int, int);
+void ShowArray(int);
+
+employee::employee(char *name, int age, int stage);
+{strcpy (employee::name, name);
+employee::age,age;
+employee::stage,stage;
+cout<<"\n structor has called"<<endl
+}
+employee::employee()
+{employee::name="Andrey";
+employee::age=29
+employee::stage=12
+cout<<"\n constructor has called"<<endl
+}
+employee::employee(const employee &other)
+{name=other.name;
+age=other.age;
+stage=other.age;
+cout<<"\n constructor had called"<<endl
+}
+employee::~employee
+{name=NULL;
+age=NULL;
+stage=NULL;
+cout<<"destructor had been complied"<<endl
+}
+void::SetName()
+{return name;
+}
+void::SetAge(int age)
+{age=AGE;
+}
+void::SetStage(int stage)
+{stage=STAGE;
+}
+void employee::GetAge()
+{return age;
+}
+void employee::GetStage(int stage)
+{return stage;
+}
+void employee::GetName()
+{return name;
+}
