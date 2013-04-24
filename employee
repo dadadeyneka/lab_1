@@ -2,7 +2,7 @@
 #include <conio.h>
 
 Class employee
-private:
+{private:
 char *name;
 int age;
 int stage;
@@ -24,7 +24,7 @@ void Set(char *, int int);
 void Show();
 
 void SetArray(char *,int, int);
-void ShowArray(int);
+void ShowArray(int);}
 
 employee::employee(char *name, int age, int stage);
 {strcpy (employee::name, name);
@@ -68,3 +68,22 @@ void employee::GetStage(int stage)
 void employee::GetName()
 {return name;
 }
+ void employee::Set(char* name,int age,int stage)
+{
+employee::name=name;
+employee::age=age;
+employee::stage=stage;
+};
+void employee::Show()
+{
+cout<<"\n Name of employee is " <<name;
+cout<<"\n Age of employee is " <<age;
+cout<<"\n Stage of employee is " <<stage;
+};
+void employee::InputArray(char* name,int age,int stage,int numb)
+{
+employee::name=name;
+employee::age=age;
+employee::stage=stage;
+};
+
