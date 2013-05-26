@@ -2,6 +2,7 @@
 #include <conio.h>
 
 Class employee
+employee::employee()\\конструктор по замовчанню
 {private:
 char *name;
 int age;
@@ -26,7 +27,7 @@ void Show();
 void SetArray(char *,int, int);
 void ShowArray(int);}
 
-employee::employee(char *name, int age, int stage);
+employee::employee(char *name, int age, int stage);\\конструктор з параметрами
 {strcpy (employee::name, name);
 employee::age,age;
 employee::stage,stage;
@@ -44,7 +45,7 @@ age=other.age;
 stage=other.age;
 cout<<"\n constructor had called"<<endl
 }
-employee::~employee
+~employee::employee\\деструктор
 {name=NULL;
 age=NULL;
 stage=NULL;
